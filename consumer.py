@@ -14,7 +14,7 @@ async def on_message(message: DeliveredMessage):
 
 async def main():
     # Подключение к RabbitMQ
-    connection = await aiormq.connect("amqp://rabbitmqlogin:rabbitmqpassword@localhost/")
+    connection = await aiormq.connect("amqp://user:P@ssw0rd@localhost/")
 
     # Создание канала
     channel = await connection.channel()

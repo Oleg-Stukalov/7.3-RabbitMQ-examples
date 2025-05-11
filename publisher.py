@@ -4,7 +4,7 @@ import aiormq
 
 async def publish():
     # Подключение к RabbitMQ
-    connection = await aiormq.connect("amqp://rabbitmqlogin:rabbitmqpassword@localhost/")
+    connection = await aiormq.connect("amqp://user:P@ssw0rd@localhost/")
 
     # Создание канала
     channel = await connection.channel()
